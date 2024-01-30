@@ -1,0 +1,47 @@
+body{
+    background-color: #B91450;
+    font-family: sans-serif;
+}
+/* 
+Se non voglio dare le proprietà tramite JS lo faccio tramite CSS cosi :
+h1{
+    text-align: center;
+    color: white;
+} 
+*/
+#first-section{
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px 0px;
+    margin: 20px 70px;
+    /* text-align: center; */
+}
+#first-section .top{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.top * {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#first-section .bottom{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 30px;
+    
+}
+input{
+    text-align: center;
+}
+
+#second-section{
+    background-color: white;
+    padding: 10px 10px;
+    margin: 0px 70px;
+}
+.userpass{
+    background-color: gray;
+}
