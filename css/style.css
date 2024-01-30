@@ -26,6 +26,10 @@ h1{
     flex-direction: column;
     gap: 10px;
 }
+.my-border{
+    border: 1px solid #B91450;
+    border-radius: 5px;
+}
 #first-section .bottom{
     display: flex;
     justify-content: center;
@@ -41,7 +45,16 @@ input{
     background-color: white;
     padding: 10px 10px;
     margin: 0px 70px;
+    
+}
+.my-border2{
+    border: 1px solid gray;
+}
+.myfont{
+    font-size: 15px;
+    font-weight: bold;
 }
 .userpass{
     background-color: gray;
+    padding: 10px 0px 70px 10px;
 }

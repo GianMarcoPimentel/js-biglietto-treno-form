@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>js-biglietto-treno-form</title>
 </head>
@@ -13,27 +15,27 @@
 
     <div id="first-section">
         <div class="top">
-            <div id="sezioneNome">
-                <label for="userName">Nome e Cognome:</label>
-                <input type="text" id="userName">
+            <div id="sezioneNome" class="fw-bold">
+                <label for="userName">Nome e Cognome</label>
+                <input type="text" id="userName" class="my-border">
             </div>
-            <div id="sezioneKm">
+            <div id="sezioneKm" class="fw-bold">
                 <label for="km">Km da percorrere</label>
-                <input type="number" id="km">
+                <input type="number" id="km" class="my-border">
             </div>
-            <div id="sezioneAge">
+            <div id="sezioneAge" class="fw-bold">
                 <label for="age">Fascia di età</label>
-                <input type="number" id="age">
+                <input type="number" id="age" class="my-border">
             </div>
         </div>
         <div class="bottom">
             <div id="genera">
-                <button class="pulsante">
+                <button class="pulsante fw-bold">
                 
                 </button>
             </div>
            <div id="annulla">
-               <button class="pulsante">
+               <button class="pulsante fw-bold">
                    
                </button>
            </div>
@@ -48,13 +50,48 @@
         <h2 id="subtitle">
 
         </h2>
-        <div class="userpass">
-            <h3>NOME DEL PASSEGGERO</h3>
-            <span id="pass-name"></span>
-        </div>
-    </div>
-    <div id="result">
-
+        
+            <div class="container">
+                <div class="row my-border2 ">
+                    <div class="col-3 userpass">
+                        <h4 class="myfont">NOME DEL PASSEGGERO</h4>
+                        <span id="pass-name"></span>
+                    </div>
+                    <div class="col d-flex flex-column justify-content-between py-2">
+                        <div class="col-12">
+                            Offerta
+                        </div>
+                        <div class="col-12">
+                            Biglietto Standard
+                        </div>
+                    </div>
+                    <div class="col d-flex flex-column justify-content-between py-2">
+                        <div class="col-12">
+                            Carrozza
+                        </div>
+                        <div class="col-12">
+                            5
+                        </div>
+                    </div>
+                    <div class="col d-flex flex-column justify-content-between py-2">
+                        <div class="col-12">
+                            Codice CP
+                        </div>
+                        <div class="col-12">
+                            92911
+                        </div>
+                    </div>
+                    <div class="col d-flex flex-column justify-content-between py-2">
+                        <div class="col-12">
+                            Prezzo
+                        </div>
+                        <div class="col-12" id="result">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
     </div>
    
 

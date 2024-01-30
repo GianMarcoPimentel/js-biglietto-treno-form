@@ -6,23 +6,34 @@ titleElement.style.textAlign= "center";
 
 const buttonGeneraElement = document.querySelector("#genera button");
 buttonGeneraElement.innerHTML = "Genera";
+buttonGeneraElement.style.color = "#B91450"
 
 const buttonAnnullaElement = document.querySelector("#annulla button");
 buttonAnnullaElement.innerHTML = "Annulla";
+buttonAnnullaElement.style.color = "#B91450";
+/* buttonAnnullaElement.swing.border = "#B91450"; */
+
+ const inputsezioneNomeElement = document.querySelector("#sezioneNome input");
+ inputsezioneNomeElement.value="Gian Marco Pimentel";
+
+const labelNomeElement = document.querySelector("#sezioneNome label");
+labelNomeElement.style.color = "#B91450"
 
 
-const inputsezioneNomeElement = document.querySelector("#sezioneNome input");
-inputsezioneNomeElement.value="Gian Marco Pimentel";
+const labelKmElement = document.querySelector("#sezioneKm label");
+labelKmElement.style.color = "#B91450"
 
-
+const labelAgeElement = document.querySelector("#sezioneAge label");
+labelAgeElement.style.color = "#B91450"
 
 
 buttonGeneraElement.addEventListener("click",
         function(){
             const inputsezioneAgeElement = Number(document.querySelector("#sezioneAge input").value);
-            console.log(inputsezioneAgeElement);
+            
             const inputsezioneKmElement = Number(document.querySelector("#sezioneKm input").value);
             
+
 
             let price = 0.21 * inputsezioneKmElement;
             let finalPrice= price.toFixed(2);
@@ -35,7 +46,7 @@ buttonGeneraElement.addEventListener("click",
                 //allora sconto 40%
                 finalPrice = price - price * 0.4
             }
-            document.getElementById("result").innerHTML = `${finalPrice} `
+            document.getElementById("result").innerHTML = `€ ${finalPrice} `
         }
 
 )
@@ -59,5 +70,5 @@ subtitleElement.style.textAlign= "start";
 userpassElement.style.backgroundColor = "gray"; */
 
 const spanElement = document.querySelector("#pass-name");
-spanElement.innerText = inputsezioneNomeElement.value ;
+spanElement.innerText =  inputsezioneNomeElement.value ;
  
