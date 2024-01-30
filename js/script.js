@@ -60,3 +60,4 @@ userpassElement.style.backgroundColor = "gray"; */
 
 const spanElement = document.querySelector("#pass-name");
 spanElement.innerText = inputsezioneNomeElement.value ;
+ 
